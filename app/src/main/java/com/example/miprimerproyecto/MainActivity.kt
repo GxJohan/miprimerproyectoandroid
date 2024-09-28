@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //Configuramos el listener para el botón usando binding
+        binding.btnClick.setOnClickListener {
+            //Cambiamos el texto del TextView usando binding
+            binding.tvHola.text = "Botón clickeado"
+        }
 
 
 
