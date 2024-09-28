@@ -31,6 +31,19 @@ class MainActivity : AppCompatActivity() {
             binding.tvHola.text = "Botón clickeado"
         }
 
+        var contador = 0
+        //Configuramos el boton de contar
+        binding.btnContar.setOnClickListener{
+            contador+=1
+            binding.tvContador.text=contador.toString()
+        }
+
+        //Configuramos el boton de reiniciar
+        binding.btnReset.setOnClickListener{
+            contador=0
+            binding.tvContador.text=contador.toString()
+        }
+
 
 
 
