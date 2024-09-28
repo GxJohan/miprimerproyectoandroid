@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintVertical_bias="0.235" />
 
     <Button
         android:id="@+id/btnClick"
@@ -28,5 +28,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHola" />
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Contador"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="490dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClick" />
+
+
+    <Button
+        android:id="@+id/btnContar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contar"
+        tools:layout_editor_absoluteX="159dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteY="542dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContador"
+        />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnContar"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
